@@ -28,9 +28,9 @@ jobs:
 
       - name: Build the Docker image
         run: |
-          docker build --build-arg IMAGE_TAG=${{ env.IMAGE_TAG }} -t e5sub/lumenim:${{ env.IMAGE_TAG }} -t e5sub/lumenim:latest .
+          docker build --build-arg IMAGE_TAG=${{ env.IMAGE_TAG }} -t 1040155/lumenim:${{ env.IMAGE_TAG }} -t 1040155/lumenim:latest .
 
       - name: Push the Docker image
         run: |
-          docker push e5sub/lumenim:${{ env.IMAGE_TAG }}
-          docker push e5sub/lumenim:latest
+          docker push 1040155/lumenim:${{ env.IMAGE_TAG }}
+          docker push 1040155/lumenim:latest
